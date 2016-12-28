@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsViewController">
+            <connections>
+                <outlet property="termsLabel" destination="bFn-aF-QIe" id="jNX-Fl-7LV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="b8H-TQ-q9x" id="ivo-a4-45i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTQ-ag-mfe">
+                    <rect key="frame" x="25" y="76" width="270" height="415"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFn-aF-QIe">
+                            <rect key="frame" x="53" y="14" width="164" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="164" id="LHr-jZ-X1v"/>
+                                <constraint firstAttribute="height" constant="21" id="hMT-1T-4AI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHU-Rf-dhd">
+                            <rect key="frame" x="226" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="QaS-3Y-fVl"/>
+                                <constraint firstAttribute="width" constant="44" id="RDV-mw-bMM"/>
+                            </constraints>
+                            <state key="normal" image="pop_close">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="-1" eventType="touchUpInside" id="WNV-Ro-6wE"/>
+                            </connections>
+                        </button>
+                        <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-TQ-q9x">
+                            <rect key="frame" x="0.0" y="43" width="270" height="372"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                        </webView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QHU-Rf-dhd" secondAttribute="trailing" id="4pP-GA-AdB"/>
+                        <constraint firstAttribute="bottom" secondItem="b8H-TQ-q9x" secondAttribute="bottom" id="6MM-c3-dfc"/>
+                        <constraint firstAttribute="centerX" secondItem="bFn-aF-QIe" secondAttribute="centerX" id="O9x-VA-OIc"/>
+                        <constraint firstItem="b8H-TQ-q9x" firstAttribute="top" secondItem="bFn-aF-QIe" secondAttribute="bottom" constant="8" id="OvQ-nJ-Uuh"/>
+                        <constraint firstAttribute="trailing" secondItem="b8H-TQ-q9x" secondAttribute="trailing" id="RLV-bC-Ry1"/>
+                        <constraint firstItem="b8H-TQ-q9x" firstAttribute="leading" secondItem="iTQ-ag-mfe" secondAttribute="leading" id="c38-hd-49I"/>
+                        <constraint firstItem="QHU-Rf-dhd" firstAttribute="top" secondItem="iTQ-ag-mfe" secondAttribute="top" id="kMF-D8-iGV"/>
+                        <constraint firstItem="bFn-aF-QIe" firstAttribute="top" secondItem="iTQ-ag-mfe" secondAttribute="top" constant="14" id="l7Y-md-z2G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iTQ-ag-mfe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="Odm-Lb-Uzi"/>
+                <constraint firstAttribute="bottom" secondItem="iTQ-ag-mfe" secondAttribute="bottom" constant="77" id="jyV-Hm-cZp"/>
+                <constraint firstItem="iTQ-ag-mfe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="qki-sF-kaX"/>
+                <constraint firstAttribute="trailing" secondItem="iTQ-ag-mfe" secondAttribute="trailing" constant="25" id="vgA-s2-YN2"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pop_close" width="13" height="13"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

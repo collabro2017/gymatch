@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="vYz-OL-e8q" customClass="SessionTableViewCell1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vYz-OL-e8q" id="fsi-mA-owt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVu-lo-Fwx">
+                        <rect key="frame" x="240" y="0.0" width="80" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whg-FB-8YP">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Vyc-jr-DdR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZr-ys-8ut">
+                        <rect key="frame" x="80" y="0.0" width="80" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gif-mk-u3f">
+                        <rect key="frame" x="160" y="0.0" width="80" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KZr-ys-8ut" firstAttribute="width" secondItem="whg-FB-8YP" secondAttribute="width" id="0kD-zN-b6e"/>
+                    <constraint firstItem="whg-FB-8YP" firstAttribute="leading" secondItem="fsi-mA-owt" secondAttribute="leading" id="4NL-rN-FIv"/>
+                    <constraint firstItem="whg-FB-8YP" firstAttribute="baseline" secondItem="gif-mk-u3f" secondAttribute="baseline" id="8bh-49-jhN"/>
+                    <constraint firstItem="MVu-lo-Fwx" firstAttribute="width" secondItem="whg-FB-8YP" secondAttribute="width" id="E0O-yV-Ngf"/>
+                    <constraint firstItem="whg-FB-8YP" firstAttribute="centerY" secondItem="fsi-mA-owt" secondAttribute="centerY" id="IGg-Yw-rbe"/>
+                    <constraint firstItem="KZr-ys-8ut" firstAttribute="leading" secondItem="whg-FB-8YP" secondAttribute="trailing" id="SaM-GK-xCS"/>
+                    <constraint firstItem="gif-mk-u3f" firstAttribute="width" secondItem="whg-FB-8YP" secondAttribute="width" id="b4B-QC-v1D"/>
+                    <constraint firstItem="whg-FB-8YP" firstAttribute="baseline" secondItem="MVu-lo-Fwx" secondAttribute="baseline" id="bXF-hB-EjO"/>
+                    <constraint firstItem="KZr-ys-8ut" firstAttribute="height" secondItem="whg-FB-8YP" secondAttribute="height" id="c5D-Si-TCa"/>
+                    <constraint firstItem="gif-mk-u3f" firstAttribute="height" secondItem="whg-FB-8YP" secondAttribute="height" id="jLn-6t-p1g"/>
+                    <constraint firstItem="MVu-lo-Fwx" firstAttribute="leading" secondItem="gif-mk-u3f" secondAttribute="trailing" id="kEC-9q-g73"/>
+                    <constraint firstItem="MVu-lo-Fwx" firstAttribute="height" secondItem="whg-FB-8YP" secondAttribute="height" id="ooh-6V-jwe"/>
+                    <constraint firstItem="whg-FB-8YP" firstAttribute="top" secondItem="fsi-mA-owt" secondAttribute="top" id="pl6-Hm-60b"/>
+                    <constraint firstAttribute="trailing" secondItem="MVu-lo-Fwx" secondAttribute="trailing" id="sI9-Ec-VF7"/>
+                    <constraint firstItem="whg-FB-8YP" firstAttribute="baseline" secondItem="KZr-ys-8ut" secondAttribute="baseline" id="t8b-cw-B5g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button_Duration" destination="gif-mk-u3f" id="Oe2-ec-y10"/>
+                <outlet property="button_Rate" destination="MVu-lo-Fwx" id="jkB-iF-o1R"/>
+                <outlet property="button_SelectedDate" destination="whg-FB-8YP" id="4Us-Gt-3KM"/>
+                <outlet property="button_StartTime" destination="KZr-ys-8ut" id="Dc8-98-fe9"/>
+            </connections>
+            <point key="canvasLocation" x="506" y="153"/>
+        </tableViewCell>
+    </objects>
+</document>

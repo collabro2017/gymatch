@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportViewController">
+            <connections>
+                <outlet property="pickerView" destination="JlO-bW-9Ln" id="wOH-x4-oE1"/>
+                <outlet property="titleLabel" destination="x7o-Q0-UB9" id="LfH-Ij-JKQ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a reason for reporting this person" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="x7o-Q0-UB9">
+                    <rect key="frame" x="20" y="93" width="280" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="CK6-uA-T2L"/>
+                        <constraint firstAttribute="height" constant="50" id="SYj-cl-G3U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsN-lS-60f" customClass="RoundButton">
+                    <rect key="frame" x="13" y="380" width="294" height="54"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="294" id="1rq-GN-3ak"/>
+                        <constraint firstAttribute="height" constant="54" id="Vew-pV-qwl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Report">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="button-green-pressed"/>
+                    <connections>
+                        <action selector="reportButtonPressed:" destination="-1" eventType="touchUpInside" id="mIM-i8-mLg"/>
+                    </connections>
+                </button>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlO-bW-9Ln">
+                    <rect key="frame" x="0.0" y="151" width="320" height="162"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="9dn-Om-s1Z"/>
+                        <constraint firstAttribute="height" constant="162" id="fFj-Wy-Qad"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ww4-Ui-OC6"/>
+                        <outlet property="delegate" destination="-1" id="cvF-jc-eKk"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JlO-bW-9Ln" firstAttribute="top" secondItem="x7o-Q0-UB9" secondAttribute="bottom" constant="8" id="4Fa-jX-j86"/>
+                <constraint firstAttribute="centerX" secondItem="x7o-Q0-UB9" secondAttribute="centerX" id="9Kb-uq-1Iv"/>
+                <constraint firstAttribute="centerX" secondItem="KsN-lS-60f" secondAttribute="centerX" id="N0c-tv-Ggs"/>
+                <constraint firstAttribute="centerX" secondItem="JlO-bW-9Ln" secondAttribute="centerX" id="a7A-rM-MFH"/>
+                <constraint firstItem="x7o-Q0-UB9" firstAttribute="top" secondItem="1" secondAttribute="top" constant="93" id="pYe-0a-b4p"/>
+                <constraint firstItem="KsN-lS-60f" firstAttribute="top" secondItem="JlO-bW-9Ln" secondAttribute="bottom" constant="67" id="vI7-yj-9tC"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="button-green-pressed" width="35" height="35"/>
+    </resources>
+</document>

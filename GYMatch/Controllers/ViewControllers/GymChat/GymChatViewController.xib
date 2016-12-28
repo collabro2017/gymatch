@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GymChatViewController">
+            <connections>
+                <outlet property="containView" destination="mpR-xr-Uej" id="MAL-yA-cfh"/>
+                <outlet property="messageTableView" destination="gUD-fL-KQg" id="vox-oo-5ak"/>
+                <outlet property="messageTextField" destination="r1d-YU-PhO" id="KKT-uE-WOg"/>
+                <outlet property="photoBtn" destination="7Px-hV-u2W" id="M5F-H3-CKJ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-xr-Uej">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Px-hV-u2W">
+                            <rect key="frame" x="0.0" y="0.0" width="63" height="55"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="21b-rB-0Ez"/>
+                                <constraint firstAttribute="width" constant="63" id="NBp-zc-MdA"/>
+                            </constraints>
+                            <state key="normal" image="gymchat_2">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addPicture:" destination="-1" eventType="touchUpInside" id="mgN-3Y-vgH"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textback" translatesAutoresizingMaskIntoConstraints="NO" id="X6O-uD-0TG">
+                            <rect key="frame" x="63" y="6" width="183" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="kBH-FL-hNr"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write something..." adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r1d-YU-PhO">
+                            <rect key="frame" x="69" y="6" width="171" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="11e-D4-Oh9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="g2V-eU-Rhu"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3x-rW-6kW">
+                            <rect key="frame" x="254" y="10" width="58" height="36"/>
+                            <color key="backgroundColor" red="0.043137254901960784" green="0.74901960784313726" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="58" id="Hku-I9-kC1"/>
+                                <constraint firstAttribute="height" constant="36" id="brg-v0-myL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="Send">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sendButtonPressed:" destination="-1" eventType="touchUpInside" id="QWU-gX-zkc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="CsR-5B-Vw9"/>
+                        <constraint firstItem="p3x-rW-6kW" firstAttribute="leading" secondItem="X6O-uD-0TG" secondAttribute="trailing" constant="8" id="D5z-Fz-i2A"/>
+                        <constraint firstItem="7Px-hV-u2W" firstAttribute="top" secondItem="mpR-xr-Uej" secondAttribute="top" id="Eg6-bD-rWn"/>
+                        <constraint firstItem="r1d-YU-PhO" firstAttribute="top" secondItem="mpR-xr-Uej" secondAttribute="top" constant="6" id="Ezp-bP-6zo"/>
+                        <constraint firstAttribute="trailing" secondItem="p3x-rW-6kW" secondAttribute="trailing" constant="8" id="Pb1-e2-q4e"/>
+                        <constraint firstItem="p3x-rW-6kW" firstAttribute="leading" secondItem="r1d-YU-PhO" secondAttribute="trailing" constant="14" id="Qii-6z-2jn"/>
+                        <constraint firstItem="X6O-uD-0TG" firstAttribute="top" secondItem="mpR-xr-Uej" secondAttribute="top" constant="6" id="ROn-HJ-vHJ"/>
+                        <constraint firstItem="p3x-rW-6kW" firstAttribute="top" secondItem="mpR-xr-Uej" secondAttribute="top" constant="10" id="Yao-3B-pHO"/>
+                        <constraint firstItem="7Px-hV-u2W" firstAttribute="leading" secondItem="mpR-xr-Uej" secondAttribute="leading" id="kxh-NF-lc0"/>
+                        <constraint firstItem="r1d-YU-PhO" firstAttribute="leading" secondItem="7Px-hV-u2W" secondAttribute="trailing" constant="6" id="mTs-v0-6tZ"/>
+                        <constraint firstItem="X6O-uD-0TG" firstAttribute="leading" secondItem="7Px-hV-u2W" secondAttribute="trailing" id="zmO-Gi-6OE"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-fL-KQg">
+                    <rect key="frame" x="0.0" y="55" width="320" height="513"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="deviceRGB"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XRb-mI-seU"/>
+                        <outlet property="delegate" destination="-1" id="cIh-7o-7KT"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gUD-fL-KQg" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="9KG-Vg-Wdq"/>
+                <constraint firstItem="mpR-xr-Uej" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="FDv-FB-FqB"/>
+                <constraint firstItem="mpR-xr-Uej" firstAttribute="top" secondItem="1" secondAttribute="top" id="Ma5-QM-rbV"/>
+                <constraint firstAttribute="bottom" secondItem="gUD-fL-KQg" secondAttribute="bottom" id="QvE-iN-ZxI"/>
+                <constraint firstItem="gUD-fL-KQg" firstAttribute="top" secondItem="mpR-xr-Uej" secondAttribute="bottom" id="UNE-7I-9zQ"/>
+                <constraint firstAttribute="trailing" secondItem="mpR-xr-Uej" secondAttribute="trailing" id="ZQI-MT-irf"/>
+                <constraint firstAttribute="trailing" secondItem="gUD-fL-KQg" secondAttribute="trailing" id="bdx-e2-HaU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gymchat_2" width="43" height="35"/>
+        <image name="textback" width="187" height="36"/>
+    </resources>
+</document>

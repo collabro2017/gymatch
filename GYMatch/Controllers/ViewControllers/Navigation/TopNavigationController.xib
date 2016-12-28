@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopNavigationController">
+            <connections>
+                <outlet property="friendNavigationBar" destination="maw-Ia-0uO" id="zqg-lm-rnV"/>
+                <outlet property="grayMenuView" destination="zop-6y-JaP" id="QT1-b2-7qA"/>
+                <outlet property="profileMenuButton" destination="u35-tS-gBT" id="RmN-9V-Ow1"/>
+                <outlet property="profileMenuView" destination="ioK-jo-RCD" id="lGp-vx-qXK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="maw-Ia-0uO">
+            <rect key="frame" x="0.0" y="0.0" width="43" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u35-tS-gBT">
+                    <rect key="frame" x="-1" y="20" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="menu">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="menu_selected"/>
+                    <connections>
+                        <action selector="muProfileButtonPressed:" destination="-1" eventType="touchUpInside" id="bS6-JR-bR4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="23.5" y="478"/>
+        </view>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="ioK-jo-RCD">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zop-6y-JaP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.029800906777381897" green="0.029800906777381897" blue="0.029800906777381897" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="414" y="368"/>
+        </view>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="3Xj-rA-gv0" userLabel="View - backup">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVM-G0-GGG">
+                    <rect key="frame" x="64" y="0.0" width="64" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NYe-kx-zWc"/>
+                        <constraint firstAttribute="width" constant="64" id="WhE-ie-Q1T"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="search">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="search_active"/>
+                    <connections>
+                        <action selector="searchButtonPressed:" destination="-1" eventType="touchUpInside" id="rtb-fJ-E2E"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruj-FA-9H0">
+                    <rect key="frame" x="128" y="0.0" width="64" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ufx-Ab-qQS"/>
+                        <constraint firstAttribute="width" constant="64" id="vkg-GW-IdT"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="locator">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="locator_active"/>
+                    <connections>
+                        <action selector="gymLocatorButtonPressed:" destination="-1" eventType="touchUpInside" id="4mC-hf-Zfe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfR-Ma-5id">
+                    <rect key="frame" x="192" y="0.0" width="64" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="t7n-gQ-8QH"/>
+                        <constraint firstAttribute="height" constant="50" id="vRn-PM-0PQ"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="gtv">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="gtv_active"/>
+                    <connections>
+                        <action selector="gtvButtonPressed:" destination="-1" eventType="touchUpInside" id="rAZ-Qs-idk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivM-z4-RMY">
+                    <rect key="frame" x="256" y="0.0" width="64" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="QdL-3B-zwd"/>
+                        <constraint firstAttribute="width" constant="64" id="yZC-Gk-EKo"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="chet">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="chet_active"/>
+                    <connections>
+                        <action selector="gymChatButtonPressed:" destination="-1" eventType="touchUpInside" id="NDW-gM-PTe"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isz-H0-P1O">
+                    <rect key="frame" x="0.0" y="33" width="64" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT9-ns-nJk">
+                    <rect key="frame" x="63" y="33" width="64" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gym Locator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gck-7A-Y49">
+                    <rect key="frame" x="128" y="33" width="64" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G-TV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yo-GA-fd5">
+                    <rect key="frame" x="192" y="33" width="64" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fit Board" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsL-4y-r3r">
+                    <rect key="frame" x="256" y="33" width="64" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sah-du-Zrg">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0g9-wK-5iG"/>
+                        <constraint firstAttribute="width" constant="64" id="sv6-R5-B6f"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="profile">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="profile_active"/>
+                    <connections>
+                        <action selector="userProfileButtonPressed:" destination="-1" eventType="touchUpInside" id="btL-OD-nvt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.13532803952693939" green="0.13532398641109467" blue="0.13532629609107971" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gfR-Ma-5id" firstAttribute="top" secondItem="ivM-z4-RMY" secondAttribute="top" id="AIZ-n6-Q7X"/>
+                <constraint firstItem="Ruj-FA-9H0" firstAttribute="top" secondItem="lVM-G0-GGG" secondAttribute="top" id="Djr-ac-tc4"/>
+                <constraint firstItem="ivM-z4-RMY" firstAttribute="leading" secondItem="gfR-Ma-5id" secondAttribute="trailing" id="HW6-AY-Poo"/>
+                <constraint firstItem="gfR-Ma-5id" firstAttribute="leading" secondItem="Ruj-FA-9H0" secondAttribute="trailing" id="IoT-BB-Lvh"/>
+                <constraint firstItem="lVM-G0-GGG" firstAttribute="top" secondItem="sah-du-Zrg" secondAttribute="top" id="Qtr-6f-IqK"/>
+                <constraint firstItem="Ruj-FA-9H0" firstAttribute="top" secondItem="3Xj-rA-gv0" secondAttribute="top" id="Rnn-Js-B8t"/>
+                <constraint firstItem="Ruj-FA-9H0" firstAttribute="leading" secondItem="lVM-G0-GGG" secondAttribute="trailing" id="TjQ-Gy-mfT"/>
+                <constraint firstItem="lVM-G0-GGG" firstAttribute="leading" secondItem="sah-du-Zrg" secondAttribute="trailing" id="eVF-Oh-TnM"/>
+                <constraint firstAttribute="centerX" secondItem="Ruj-FA-9H0" secondAttribute="centerX" id="jx2-Xw-yaK"/>
+                <constraint firstItem="Ruj-FA-9H0" firstAttribute="top" secondItem="gfR-Ma-5id" secondAttribute="top" id="sn9-nk-jy1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="148" y="18"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chet" width="24" height="23"/>
+        <image name="chet_active" width="24" height="23"/>
+        <image name="gtv" width="23" height="23"/>
+        <image name="gtv_active" width="23" height="23"/>
+        <image name="locator" width="17" height="23"/>
+        <image name="locator_active" width="17" height="23"/>
+        <image name="menu" width="22" height="22"/>
+        <image name="menu_selected" width="22" height="22"/>
+        <image name="profile" width="23" height="23"/>
+        <image name="profile_active" width="23" height="23"/>
+        <image name="search" width="23" height="23"/>
+        <image name="search_active" width="23" height="23"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

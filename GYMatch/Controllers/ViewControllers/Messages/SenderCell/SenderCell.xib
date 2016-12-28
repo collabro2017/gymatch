@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SenderCell" rowHeight="76" id="uEY-KZ-9PO" customClass="SenderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uEY-KZ-9PO" id="gPg-Tf-EFo">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user_plus" translatesAutoresizingMaskIntoConstraints="NO" id="EJ9-D8-P6D" customClass="ProfileImageView">
+                        <rect key="frame" x="12" y="8" width="60" height="60"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Appleseed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fa-2C-K0s">
+                        <rect key="frame" x="89" y="16" width="168" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="msg-count" translatesAutoresizingMaskIntoConstraints="NO" id="el7-By-VJ3">
+                        <rect key="frame" x="267" y="46" width="17" height="17"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isG-xA-HVn">
+                        <rect key="frame" x="270" y="47" width="12" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="14:36" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Fgn-iH-1eH">
+                        <rect key="frame" x="244" y="10" width="61" height="13"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="Mzo-ye-vD4">
+                        <rect key="frame" x="232" y="12" width="12" height="8"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right_sign" translatesAutoresizingMaskIntoConstraints="NO" id="Z1c-8e-b3v">
+                        <rect key="frame" x="55" y="51" width="18" height="18"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi! Mate, shall we book" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTv-Yg-SWS">
+                        <rect key="frame" x="89" y="31" width="170" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.23995085685483872" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTF-EO-jck">
+                        <rect key="frame" x="77" y="75" width="201" height="1"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countImageView" destination="el7-By-VJ3" id="B71-Fy-w0B"/>
+                <outlet property="lastMessageLabel" destination="LTv-Yg-SWS" id="5Pb-Pg-L4X"/>
+                <outlet property="messageCountLabel" destination="isG-xA-HVn" id="H42-AZ-6wk"/>
+                <outlet property="onlineImageView" destination="Z1c-8e-b3v" id="9in-tk-zYy"/>
+                <outlet property="timeImageView" destination="Mzo-ye-vD4" id="ADQ-Eu-dPF"/>
+                <outlet property="timeLabel" destination="Fgn-iH-1eH" id="feE-Gp-gtd"/>
+                <outlet property="userImageView" destination="EJ9-D8-P6D" id="fgi-wV-Tb9"/>
+                <outlet property="usernameLabel" destination="6Fa-2C-K0s" id="Pa7-Qn-qRr"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="208"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="msg-count" width="35" height="35"/>
+        <image name="right_sign" width="28" height="28"/>
+        <image name="time" width="8" height="8"/>
+        <image name="user_plus" width="81" height="81"/>
+    </resources>
+</document>

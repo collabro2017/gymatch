@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotPassViewController">
+            <connections>
+                <outlet property="emailTextField" destination="RLx-Qa-7ca" id="QWZ-L2-jdy"/>
+                <outlet property="instructionLabel" destination="R8r-ah-0eU" id="ICg-jU-JOd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-Qa-7ca" customClass="MHTextField">
+                    <rect key="frame" x="14" y="137" width="292" height="40"/>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="GVE-Iy-SsW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UE0-wX-qQ4" customClass="RoundButton">
+                    <rect key="frame" x="13" y="212" width="294" height="50"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="294" id="cBd-GC-XDc"/>
+                        <constraint firstAttribute="height" constant="50" id="pJl-JT-BIi"/>
+                    </constraints>
+                    <state key="normal" title="SUBMIT">
+                        <color key="titleColor" red="0.36078431370000003" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="button-green-pressed"/>
+                    <connections>
+                        <action selector="forgotPassword:" destination="-1" eventType="touchUpInside" id="Iny-IB-xZG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your email address  to send you an email  to reset your password." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="292" translatesAutoresizingMaskIntoConstraints="NO" id="R8r-ah-0eU">
+                    <rect key="frame" x="14" y="66" width="292" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="0EZ-7B-1IT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.49019610879999997" green="0.50196081400000003" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="UE0-wX-qQ4" secondAttribute="centerX" id="1iQ-5J-BAm"/>
+                <constraint firstItem="R8r-ah-0eU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="66" id="36u-sJ-JsI"/>
+                <constraint firstItem="RLx-Qa-7ca" firstAttribute="top" secondItem="R8r-ah-0eU" secondAttribute="bottom" constant="8" id="8Nh-yG-1Zo"/>
+                <constraint firstAttribute="trailing" secondItem="RLx-Qa-7ca" secondAttribute="trailing" constant="14" id="LHO-aI-lKY"/>
+                <constraint firstItem="UE0-wX-qQ4" firstAttribute="top" secondItem="RLx-Qa-7ca" secondAttribute="bottom" constant="35" id="PUu-CQ-Gzg"/>
+                <constraint firstAttribute="trailing" secondItem="R8r-ah-0eU" secondAttribute="trailing" constant="14" id="p0E-XY-Y2S"/>
+                <constraint firstItem="R8r-ah-0eU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="vM3-0V-aVY"/>
+                <constraint firstItem="RLx-Qa-7ca" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="veP-Ez-1zw"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="button-green-pressed" width="13" height="13"/>
+    </resources>
+</document>

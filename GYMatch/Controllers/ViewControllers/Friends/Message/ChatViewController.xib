@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
+            <connections>
+                <outlet property="messageTFView" destination="dT1-dM-5TQ" id="WyN-wx-r7c"/>
+                <outlet property="messageTableView" destination="gUD-fL-KQg" id="vox-oo-5ak"/>
+                <outlet property="messageTextField" destination="2gf-Rp-dca" id="PV0-gw-Ndm"/>
+                <outlet property="messageView" destination="Xjr-uI-24U" id="xvB-uT-NHg"/>
+                <outlet property="noMessagesLabel" destination="md2-R3-f8H" id="eWa-3n-2mn"/>
+                <outlet property="textBarBtn" destination="KWv-0J-q1v" id="4cc-Ld-Mww"/>
+                <outlet property="textboxBottom" destination="CFF-tH-9F3" id="5Zx-rX-4Fe"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Messages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="md2-R3-f8H">
+                    <rect key="frame" x="108" y="0.0" width="105" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xjr-uI-24U">
+                    <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="CZK-fj-XOr">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <items>
+                                <barButtonItem image="camera" style="plain" id="x94-S0-45z">
+                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="addPicture:" destination="-1" id="l3F-NA-tS3"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" id="KWv-0J-q1v">
+                                    <view key="customView" contentMode="scaleToFill" id="dT1-dM-5TQ">
+                                        <rect key="frame" x="46" y="9" width="200" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write something..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gf-Rp-dca" customClass="RoundTextField">
+                                                <rect key="frame" x="5" y="0.0" width="195" height="27"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="-1" id="cT9-Xa-VzK"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="2gf-Rp-dca" firstAttribute="leading" secondItem="dT1-dM-5TQ" secondAttribute="leading" constant="5" id="Gtr-yr-84R"/>
+                                            <constraint firstAttribute="bottom" secondItem="2gf-Rp-dca" secondAttribute="bottom" id="XSJ-bS-acq"/>
+                                            <constraint firstAttribute="trailing" secondItem="2gf-Rp-dca" secondAttribute="trailing" id="amE-Zh-maq"/>
+                                            <constraint firstItem="2gf-Rp-dca" firstAttribute="top" secondItem="dT1-dM-5TQ" secondAttribute="top" id="zXL-eh-TBJ"/>
+                                        </constraints>
+                                    </view>
+                                </barButtonItem>
+                                <barButtonItem style="plain" id="ysR-DZ-wWf">
+                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xq7-Up-nbj" customClass="RoundButton">
+                                        <rect key="frame" x="256" y="9" width="45" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.09359431266784668" green="0.71499073505401611" blue="0.23677489161491394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendButtonPressed:" destination="-1" eventType="touchUpInside" id="1PY-Ue-Cot"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95576214790344238" green="0.96045345067977905" blue="0.96542572975158691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CZK-fj-XOr" secondAttribute="trailing" id="7dN-KJ-L9G"/>
+                        <constraint firstAttribute="height" constant="44" id="GzQ-fX-w6q"/>
+                        <constraint firstItem="CZK-fj-XOr" firstAttribute="leading" secondItem="Xjr-uI-24U" secondAttribute="leading" id="nhC-JJ-d0m"/>
+                        <constraint firstAttribute="bottom" secondItem="CZK-fj-XOr" secondAttribute="bottom" id="vTq-98-Kwb"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-fL-KQg" customClass="UIBubbleTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" red="0.73012220859527588" green="0.73012220859527588" blue="0.73012220859527588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gUD-fL-KQg" secondAttribute="trailing" id="4Jp-et-O4O"/>
+                <constraint firstItem="gUD-fL-KQg" firstAttribute="top" secondItem="1" secondAttribute="top" id="7mX-9Y-k1z"/>
+                <constraint firstItem="gUD-fL-KQg" firstAttribute="top" secondItem="md2-R3-f8H" secondAttribute="top" id="AQz-Mw-oHI"/>
+                <constraint firstAttribute="bottom" secondItem="Xjr-uI-24U" secondAttribute="bottom" id="CFF-tH-9F3"/>
+                <constraint firstAttribute="centerX" secondItem="md2-R3-f8H" secondAttribute="centerX" id="LiT-p6-TfM"/>
+                <constraint firstItem="Xjr-uI-24U" firstAttribute="top" secondItem="gUD-fL-KQg" secondAttribute="bottom" id="M9I-Qz-Qts"/>
+                <constraint firstItem="gUD-fL-KQg" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="htc-oh-21W"/>
+                <constraint firstItem="Xjr-uI-24U" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="uYI-Cl-pOH"/>
+                <constraint firstAttribute="trailing" secondItem="Xjr-uI-24U" secondAttribute="trailing" id="vhB-yx-cz8"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="222" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera" width="20" height="16"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

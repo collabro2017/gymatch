@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="frinedTableView" destination="hMQ-dF-oqR" id="HJO-bM-y8k"/>
+                <outlet property="noResultLabel" destination="fwu-0c-tNN" id="TyG-Sp-mmx"/>
+                <outlet property="searchBar" destination="5CZ-gx-tzA" id="DZF-oQ-MyA"/>
+                <outlet property="view" destination="jbv-Mt-2qM" id="Tav-s0-IXZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jbv-Mt-2qM">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hMQ-dF-oqR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="tw4-eQ-ngU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="5CZ-gx-tzA">
+                                <rect key="frame" x="0.0" y="0.0" width="261" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="t9q-aw-Pob"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="VEc-nQ-tAd"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGd-yH-ZSt" customClass="RoundButton">
+                                <rect key="frame" x="261" y="8" width="52" height="28"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80392156862745101" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="Arc-xj-O0A"/>
+                                    <constraint firstAttribute="height" constant="28" id="w7h-PU-2hY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Filters">
+                                    <color key="titleColor" red="0.46274509803921571" green="0.46666666666666667" blue="0.46274509803921571" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="filterButtonPressed:" destination="-1" eventType="touchUpInside" id="UGa-gj-vf0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="5CZ-gx-tzA" firstAttribute="leading" secondItem="tw4-eQ-ngU" secondAttribute="leading" id="7ZW-xE-wlP"/>
+                            <constraint firstAttribute="trailing" secondItem="KGd-yH-ZSt" secondAttribute="trailing" constant="7" id="Sna-sK-6ov"/>
+                            <constraint firstItem="5CZ-gx-tzA" firstAttribute="top" secondItem="tw4-eQ-ngU" secondAttribute="top" id="YX0-Ev-bFt"/>
+                            <constraint firstItem="KGd-yH-ZSt" firstAttribute="leading" secondItem="5CZ-gx-tzA" secondAttribute="trailing" id="gLV-Cd-3ah"/>
+                            <constraint firstItem="KGd-yH-ZSt" firstAttribute="top" secondItem="tw4-eQ-ngU" secondAttribute="top" constant="8" id="ztF-nS-ezs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="55a-aS-r0w"/>
+                        <outlet property="delegate" destination="-1" id="fzL-ue-sJw"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwu-0c-tNN">
+                    <rect key="frame" x="114" y="273" width="93" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="J9W-Rp-Nb3"/>
+                        <constraint firstAttribute="width" constant="93" id="U9y-L9-qxA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="fwu-0c-tNN" secondAttribute="centerY" id="2Mu-HX-xNH"/>
+                <constraint firstAttribute="bottom" secondItem="hMQ-dF-oqR" secondAttribute="bottom" id="CLj-pj-pu9"/>
+                <constraint firstItem="hMQ-dF-oqR" firstAttribute="top" secondItem="jbv-Mt-2qM" secondAttribute="top" id="RBF-Gw-B5R"/>
+                <constraint firstAttribute="centerX" secondItem="fwu-0c-tNN" secondAttribute="centerX" id="XLz-Yb-gnC"/>
+                <constraint firstAttribute="trailing" secondItem="hMQ-dF-oqR" secondAttribute="trailing" id="cBy-cE-ImJ"/>
+                <constraint firstItem="hMQ-dF-oqR" firstAttribute="leading" secondItem="jbv-Mt-2qM" secondAttribute="leading" id="swy-Mp-wwn"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+</document>
